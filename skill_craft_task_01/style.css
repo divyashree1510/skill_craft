@@ -1,0 +1,162 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+    background:#f4f7ff;
+}
+
+/* Navbar */
+#navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:transparent;
+    transition:0.4s;
+    z-index:1000;
+}
+
+#navbar.scrolled{
+    background:linear-gradient(90deg,#6a11cb,#2575fc);
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ffeb3b;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(
+        135deg,
+        #ff6b6b,
+        #ff9f43,
+        #feca57,
+        #48dbfb,
+        #5f27cd
+    );
+    background-size:400% 400%;
+    animation:gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero button{
+    background:#fff;
+    color:#5f27cd;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+    margin-top:20px;
+}
+
+/* Sections */
+#about{
+    background:linear-gradient(to right,#a18cd1,#fbc2eb);
+}
+
+#services{
+    background:linear-gradient(to right,#43e97b,#38f9d7);
+}
+
+#portfolio{
+    background:linear-gradient(to right,#fa709a,#fee140);
+}
+
+#testimonials{
+    background:linear-gradient(to right,#30cfd0,#330867);
+    color:white;
+}
+
+#contact{
+    background:linear-gradient(to right,#667eea,#764ba2);
+    color:white;
+}
+
+section{
+    padding:100px 40px;
+    text-align:center;
+}
+
+/* Cards */
+.card{
+    background:white;
+    color:#333;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:30px;
+}
+
+/* Contact Form */
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+}
+
+form button{
+    background:#ffeb3b;
+    color:black;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
